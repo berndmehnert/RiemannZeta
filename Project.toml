@@ -1,0 +1,7 @@
+name = "RiemannZeta"
+uuid = "63cb012d-16d5-4039-a04e-e1bad8aad7f9"
+authors = ["bernd <bernd.mehnert@artengis.com>"]
+version = "0.1.0"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
