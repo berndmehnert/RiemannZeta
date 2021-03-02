@@ -18,7 +18,7 @@ function GetImageOfCriticalStrip(x_range :: Int, y_range :: Int, y1 :: Real, y2 
             x_coord = (1 + x)/(x_range + 2)
             y_coord = y1 + y/y_range * (y2 - y1)
             z = SimpleRiemann(x_coord + y_coord*1im)
-            point = RGB(exp(-abs(z)), exp(-abs(z)), exp(-abs(z)))
+            point = RGB(1.0-exp(-abs(z)), 1.0-exp(-abs(z)), 1.0-exp(-abs(z)))
             result_image[x,y] = point
         end
     end
