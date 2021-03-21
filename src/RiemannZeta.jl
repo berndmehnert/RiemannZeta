@@ -25,4 +25,5 @@ function GetImageOfCriticalStrip(x_range :: Int, y_range :: Int, y1 :: Real, y2 
     return result_image
 end
 
+SaveAsPng(filename, image :: Array{RGB{Float32}}) = save(filename, image)
 end # module
